@@ -10,7 +10,7 @@ html {
  }
  
 .navbar {
-    position: relative;
+     position: relative;
      padding: 0.5rem;
      /* #1 */
      background-color: rgba(101,18,95,0.5);
@@ -56,6 +56,10 @@ html {
    /* #5 */
  .links-container .navbar-link:hover {
      color: rgb(233,50,117);
+ }
+
+.links-container .navbar-link:active {
+     background-color: white;
  }
 
 
