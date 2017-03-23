@@ -31,6 +31,21 @@ var albumPicasso = {
      ]
  };
 
+ var albumChickenParm= {
+     title: 'Lay on the Parm',
+     artist: 'DJ ill gAtes',
+     label: 'EM',
+     year: '1994',
+     albumArtUrl: 'assets/images/album_covers/20.png',
+     songs: [
+         { title: 'Goodbye, Operator?', duration: '1:01' },
+         { title: 'Bark, bark, bark', duration: '5:01' },
+         { title: 'Does Not Fit in your pocket', duration: '3:21'},
+         { title: 'Can you hear me now? I cannot', duration: '3:14' },
+         { title: 'Wrong phone number,who dis?', duration: '2:15'}
+     ]
+ };
+
  var createSongRow = function(songNumber, songName, songLength) {
      var template =
         '<tr class="album-view-song-item">'
@@ -64,8 +79,20 @@ var setCurrentAlbum = function(album) {
      for (var i = 0; i < album.songs.length; i++) {
          albumSongList.innerHTML += createSongRow(i + 1, album.songs[i].title, album.songs[i].duration);
      }
+    
  };
  
  window.onload = function() {
      setCurrentAlbum(albumPicasso);
+     
+var albums = [albumPicasso, albumMarconi, albumChickenParm];
+var index = 1;
+albumImage.addEventListener("click", function(event) {
+    setCurrentAlbum(albums[index]);
+    index++;
+    if (index == albums.length) {
+        index=0;
+    }
+});
+}
  };
