@@ -13,14 +13,14 @@ var collectionItemTemplate =
    + '  </div>'
    + '</div>'
    ;
-
-window.onload = function(){
-    //#1
-    var collectionContainer = document.getElementsByClassName('album-covers')[0];
-    //#2
-    collectionContainer.innerHTML = '';
-    //#3
-    for (var i=0; i<12; i++){
-        collectionContainer.innerHTML += collectionItemTemplate;
-    }
-}
+window.onload = function() {
+     // #1
+     var collectionContainer = document.getElementsByClassName('album-covers')[0];
+     // #2
+     collectionContainer.innerHTML = '';
+ 
+     // #3
+     for (var i = 0; i < 12; i++) {
+         collectionContainer.innerHTML += collectionItemTemplate;
+     }
+ }
