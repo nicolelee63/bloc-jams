@@ -165,7 +165,7 @@ window.onload = function() {
             clickHandler(event.target);
          });
      }
- }
+
      var albums = [albumPicasso, albumMarconi, albumPrinter];
      var index = 1;
      albumImage.addEventListener("click", function(event){
