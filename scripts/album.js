@@ -364,7 +364,7 @@ var setTotalTimeInPlayerBar = function(totalTime) {
   var totalTime = $(".total-time");
   totalTime.html(currentSoundFile.getDuration()); //another buzz method. 
 };
-
+//
 var filterTimeCode = function(timeInSeconds) {
   var numSeconds = Math.floor(parseFloat(timeInSeconds)); //round down the duration, convert it to a float
   var seconds = numSeconds % 60; //returns leftover seconds
