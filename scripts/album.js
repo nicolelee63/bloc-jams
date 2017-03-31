@@ -46,8 +46,7 @@ var clickHandler = function(){
          // Switch from Pause -> Play button to pause currently playing song.
         $(this).html(playButtonTemplate);
         $('.main-controls.play-pause').html(playerBarPlayButton);
-        currentlyPlayingSongNumber = null;
-        currentSongFromAlbum = null;
+        setSong(null);
      }
 
  };
